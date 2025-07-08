@@ -14,8 +14,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 exec xsetroot -cursor_name left_ptr &
 #AUTO START
-exec --no-startup-id bash -c 'cd /home/csode/env/scripts && bash autostart'
-exec_always --no-startup-id bash -c 'cd /home/csode/env/scripts && bash rerun'
+exec --no-startup-id bash -c 'cd ~/.config/scripts && bash autostart'
 
 ## WINDOW NAVIGATION
 floating_modifier $mod
@@ -118,9 +117,9 @@ bindsym $mod+bracketleft workspace prev
 bindsym $mod+c exec emacsclient -c -a "emacs"
 ## CUSTOM SCRIPTS
 
-bindsym $mod+Shift+z exec --no-startup-id bash -c 'cd /home/csode/packages/bin && ./boomer'
-bindsym $mod+t exec --no-startup-id bash -c 'cd /home/csode/scripts && ./sowon'
-bindsym $mod+Shift+p exec --no-startup-id bash -c 'cd /home/csode/scripts && ./record.sh'
+bindsym $mod+Shift+z exec --no-startup-id bash -c 'cd ~/packages/bin && ./boomer'
+bindsym $mod+t exec --no-startup-id bash -c 'cd ~/scripts && ./sowon'
+bindsym $mod+Shift+p exec --no-startup-id bash -c 'cd ~/scripts && ./record.sh'
 bindsym $mod+Shift+t exec --no-startup-id ~/scripts/select.sh
 bindsym $mod+Shift+s exec ~/scripts/screenshot.sh
 bindsym $mod+p exec ~/scripts/fullscreen.sh

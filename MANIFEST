@@ -1,6 +1,7 @@
 .tmux.conf|symlink|
 #.vimrc|symlink|
 i3|symlink|.config
+wallpaper|symlink|
 dunst|symlink|.config
 .emacs|symlink|
 .emacs.custom.el|symlink|
