@@ -1,0 +1,8 @@
+.tmux.conf|symlink|
+#.vimrc|symlink|
+i3|symlink|.config
+dunst|symlink|.config
+.emacs|symlink|
+.emacs.custom.el|symlink|
+.emacs.rc|symlink|
+.emacs.local|symlink|
