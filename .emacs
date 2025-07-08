@@ -46,4 +46,12 @@
 (require 'seq)
 (rc/require 'magit)
 (rc/require 'transient)
+(rc/require 'markdown-mode)
 
+(rc/require 'move-text)
+(global-set-key (kbd "M-n") 'move-text-down)
+(global-set-key (kbd "M-p") 'move-text-up)
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            (local-set-key (kbd "M-p") 'move-text-up)
+            (local-set-key (kbd "M-n") 'move-text-down)))
