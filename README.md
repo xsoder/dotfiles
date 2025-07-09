@@ -1,4 +1,4 @@
-# Dotfiles - My personal dotfile
+# Dotfiles - My personal dotfiles
 
 Inpired by tsoding
 
