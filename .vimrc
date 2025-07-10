@@ -22,4 +22,4 @@ set autochdir
 colorscheme habamax
 
 map gf :e <cfile><CR>
-nnoremap Y :let g:col = col('.')<CR>Yp:call cursor(line('.'), g:col)<CR>
+nnoremap yp :let g:col = col('.')<CR>Yp:call cursor(line('.'), g:col)<CR>

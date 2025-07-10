@@ -26,8 +26,6 @@
 
 ; PACKAGES
 (rc/require 'dash)
-(require 'dash)
-
 (rc/require 'dash-functional)
 
 (rc/require 'smex)
@@ -45,6 +43,9 @@
 
 (require 'seq)
 (rc/require 'magit)
+(setq magit-display-buffer-function
+      #'magit-display-buffer-fullframe-status-v1)
+
 (rc/require 'transient)
 (rc/require 'markdown-mode)
 
@@ -55,3 +56,6 @@
           (lambda ()
             (local-set-key (kbd "M-p") 'move-text-up)
             (local-set-key (kbd "M-n") 'move-text-down)))
+
+(require 'my-man)
+(global-set-key (kbd "C-c m") #'my/fullscreen-man)
